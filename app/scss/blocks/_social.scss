@@ -1,0 +1,17 @@
+.social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 27px;
+
+    &__item {
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            fill: url(#Gradient);
+        }
+    }
+}

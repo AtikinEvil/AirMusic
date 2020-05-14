@@ -1,0 +1,37 @@
+.gallery {
+    display: flex;
+    height: 700px;
+
+    &__col {
+        width: 40%;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            background-color: red;
+        }
+
+        &--sm {
+            width: 30%;
+
+            @media (max-width: 1000px) {
+                width: 50%;
+                background-color: red;
+            }
+        }
+    }
+
+    &__photo {
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &--sm {
+            height: 50%;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        flex-wrap: wrap;
+    }
+}

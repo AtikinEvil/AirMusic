@@ -1,0 +1,168 @@
+.product {
+    padding: 285px 0 285px;
+
+    @media (max-width: 1200px) {
+        padding: 285px 0 85px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        @media (max-width: 1200px) {
+            justify-content: center;
+        }
+    }
+
+    &__col {
+        position: relative;
+    }
+
+    &__content {
+        max-width: 720px;
+        width: 100%;
+
+        @media(max-width: 1505px) {
+            width: 550px;
+        }
+
+        @media(max-width: 1360px) {
+            width: 400px;
+        }
+
+        @media(max-width: 1200px) {
+            margin-top: 100px;
+            width: 100%;
+            text-align: center;
+        } 
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        line-height: 2.5;
+        margin-bottom: 30px;
+    }
+
+    &__choice-color {
+        @media(max-width: 1200px) {
+            display: flex;
+            justify-content: center;
+        } 
+    }
+
+    &__buy {
+        @media(max-width: 1200px) {
+            display: flex;
+            justify-content: center;
+        } 
+    }
+
+    &__decoration {
+        background: url(../img/product-triangle.svg) center no-repeat;
+        background-size: contain;
+        position: absolute;
+
+        &--1 {
+            width: 916px;
+            height: 1018px;
+
+            top: -10%;
+            left: -150px;
+
+            @media(max-width: 960px) {
+                width: 716px;
+                height: 818px;
+
+                top: -50px;
+                left: -100px;
+            }
+
+            @media(max-width: 600px) {
+                top: -150px;
+                left: -250px;
+            }
+        }
+
+        &--2 {
+            width: 180px;
+            height: 200px;
+
+            top: 300px;
+            left: 540px;
+            z-index: 1;
+
+            @media(max-width: 1200px) {
+                width: 140px;
+                height: 160px;
+
+                top: 450px;
+                left: 520px;
+            }
+
+            @media(max-width: 960px) {
+                top: -80px;
+                left: 460px;
+            }
+
+            @media(max-width: 600px) {
+                left: 260px;
+            }
+        }
+
+        &--3 {
+            width: 78px;
+            height: 86px;
+
+            top: 300px;
+            left: 700px;
+
+            @media(max-width: 1200px) {
+                width: 78px;
+                height: 86px;
+
+                top: 360px;
+                left: 650px;
+                
+                z-index: 1;
+            }
+
+            @media(max-width: 960px) {
+                top: 120px;
+                left: 600px;
+            }
+
+            @media(max-width: 600px) {
+                top: 50px;
+                left: 380px;
+            }
+        }
+
+        &--4 {
+            background: url(../img/product-point.svg) center no-repeat;
+            width: 400px;
+            height: 260px;
+
+            bottom: -250px;
+            left: 480px;
+            z-index: -1;
+
+           @media(max-width: 1200px) {
+                width: 280px;
+                height: 180px;
+
+                bottom: -180px;
+                left: 350px;
+            }
+
+            @media(max-width: 960px) {
+                bottom: -80px;
+                left: 350px;
+            }
+        }
+    }
+}

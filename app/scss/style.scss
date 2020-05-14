@@ -1,0 +1,59 @@
+@import 'libs';
+@import 'vars';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: $color-main;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.page {
+    overflow: hidden;
+}
+
+@import 'blocks/container';
+@import 'blocks/title';
+@import 'blocks/btn';
+
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/nav';
+@import 'blocks/intro';
+@import 'blocks/about';
+@import 'blocks/feature';
+@import 'blocks/faq';
+@import 'blocks/accordion';
+@import 'blocks/product';
+@import 'blocks/product-slider';
+@import 'blocks/choice-color';
+@import 'blocks/buy';
+@import 'blocks/gallery';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/social';
+@import 'blocks/nav-burger';
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.about {
+    position: relative;
+
+    padding: 200px 0 430px;
+    background: url(../img/about-bg.jpg) center no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    text-align: center;
+
+    &__title {
+        font-size: 35px;
+        font-weight: 700;
+
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        line-height: 2.5;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -330px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+
+        @media(max-width: 600px) {
+            height: 450px;
+            bottom: -200px;
+        }
+    }
+
+    @media(max-width: 600px) {
+        padding: 100px 0 230px;
+    }
+}

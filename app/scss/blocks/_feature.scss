@@ -1,0 +1,103 @@
+.feature {
+    position: relative;
+
+    background: #F8FAFE url(../img/feature-bg.svg) right top no-repeat;
+    background-size: auto;
+    padding: 270px 0 175px;
+
+    &__title {
+        margin: 0 0 30px 180px;
+
+        @media(max-width: 800px) {
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin: 0 -25px;
+    }
+
+    &__col {
+        padding: 25px;
+    }
+
+    &__item {
+        position: relative;
+
+        text-align: center;
+        overflow: hidden;
+
+        min-height: 450px;
+        max-width: 420px;
+        width: 100%;
+        padding: 70px 50px 65px;
+        border-radius: 20px;
+        background-color: #fff;
+        
+        transition: box-shadow .2s ease-in-out;
+
+        &:hover {
+            fill: url(#Gradient);
+            box-shadow: 0px 0px 30px 0px rgba(12,32,114,0.1);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            opacity: 0;
+            transition: opacity .2s linear;
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 32px;
+            background: $gradient;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 46px;
+    }
+
+    &__item-title {
+        font-size: 35px;
+        font-weight: 700;
+
+        margin-bottom: 20px;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 2.1;
+    }
+
+    &__item-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        
+        width: 170px;
+        height: 130px;
+
+        linearGradient {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        left: 100px;
+        bottom: -250px;
+    }
+}

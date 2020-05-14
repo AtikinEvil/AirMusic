@@ -1,0 +1,122 @@
+.intro {
+    background: url(../img/circle-bg.svg) left bottom no-repeat;
+    background-size: auto;
+
+    &__inner {
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media(max-width: 900px) {
+            height: 700px;
+        }
+    }
+
+    &__content {
+        width: 50%;
+        padding-right: 25px;
+
+        @media(max-width: 1300px) {
+            width: 100%;
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+
+    &__title {
+        font-size: 62px;
+        line-height: 1.5;
+        font-weight: 700;
+
+        margin-bottom: 50px;
+
+        @media(max-width: 1400px) {
+            font-size: 52px;
+        }
+
+        @media(max-width: 530px) {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        line-height: 2.5;
+        margin-bottom: 70px;
+
+        @media(max-width: 600px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 50%;
+        height: 100%;
+
+        @media(max-width: 1300px) {
+            display: none;
+        }
+    }
+
+    &__img-bg {  
+        background: url(../img/intro-bg.svg) center no-repeat;
+        background-size: contain;
+        width: 1200px;
+        height: 1255px;
+        
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: -120px;
+
+        @media(max-width: 1600px) {
+            height: 1000px;
+            margin-top: -60px;
+        }
+    }
+
+    &__img-airpods {
+        background: url(../img/intro-airpods.png) center no-repeat;
+        background-size: contain;
+        width: 1060px;
+        height: 100%;
+
+        position: absolute;
+        right: 0;
+
+        animation: airpods 1.2s ease-in-out;
+
+        @media(max-width: 1600px) {
+            width: 800px;
+        }
+    }
+
+    @keyframes airpods {
+        0% {
+            transform: translateX(110vh);
+        }
+
+        40% {
+            transform: translateX(110vh);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    &__img-dec {
+        background: url(../img/intro-dec.png) center no-repeat;
+        background-size: cover;
+        width: 836px;
+        height: 836px;
+
+        position: absolute;
+        top: 120px;
+        right: 0;
+    }
+}

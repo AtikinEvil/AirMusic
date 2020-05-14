@@ -1,0 +1,8 @@
+.logo {
+    font-size: 68px;
+    font-weight: 700;
+
+    @media(max-width: 1300px) {
+        font-size: 38px;
+    }
+}
